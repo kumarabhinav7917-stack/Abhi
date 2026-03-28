@@ -3,119 +3,336 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TFP Academy</title>
+  <title>TFP Academy | Bringing Football to Every Neighbourhood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <header>
+  <!-- ===== NAVBAR ===== -->
+  <header id="navbar">
     <nav class="navbar">
-      <div class="logo">TFP <span>Academy</span></div>
-      <ul class="nav-links">
+      <a href="#home" class="logo">TFP<span>Academy</span></a>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
+        <li><a href="#programmes">Programmes</a></li>
+        <li><a href="#pathway">Pathway</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <a href="#contact" class="btn btn-nav">Enrol Now</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </header>
 
-  <!-- HERO -->
+  <!-- ===== HERO ===== -->
   <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>TFP <span>Academy</span></h1>
-      <p class="tagline">Bringing football to every neighbourhood!</p>
-      <a href="#services" class="btn">Explore Our Programs</a>
-    </div>
+    <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">Welcome to TFP Academy</p>
+      <h1>Bringing Football<br /><span>to Every Neighbourhood</span></h1>
+      <p class="hero-sub">
+        Professional football coaching for all ages and skill levels.<br />
+        From grassroots to tournaments — we develop champions.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Enrol Now</a>
+        <a href="#programmes" class="btn btn-ghost">Our Programmes</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <span></span>
+    </a>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
+  <!-- ===== STATS BAR ===== -->
+  <div class="stats-bar">
+    <div class="stat">
+      <strong>500+</strong>
+      <span>Players Trained</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <strong>15+</strong>
+      <span>School Partnerships</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <strong>10+</strong>
+      <span>Tournaments Organised</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <strong>5+</strong>
+      <span>Years of Excellence</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
     <div class="container">
-      <h2>About Us</h2>
-      <div class="divider"></div>
-      <p>
-        TFP Academy is passionate about making football accessible to every child, regardless of background.
-        We believe the beautiful game has the power to build character, discipline, teamwork, and a love for sport.
-        From grassroots coaching to competitive tournaments, we are on a mission to bring the game to every neighbourhood.
-      </p>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="section-eyebrow">Who We Are</p>
+          <h2>Building the<br /><span>Next Generation</span><br />of Footballers</h2>
+          <p>
+            TFP Academy was born from a simple belief — every child deserves the chance to play
+            football, regardless of where they grow up. We bring professional-standard coaching
+            directly into local communities across the city.
+          </p>
+          <p>
+            Our certified coaches focus on technical skill, physical fitness, tactical understanding,
+            and above all, a deep love for the beautiful game. Whether your child is picking up a
+            football for the first time or looking to take their game to the next level, TFP Academy
+            has a pathway for them.
+          </p>
+          <a href="#programmes" class="btn btn-primary" style="margin-top:1.5rem;">Explore Programmes</a>
+        </div>
+        <div class="about-visual reveal">
+          <div class="about-card-grid">
+            <div class="about-mini-card">
+              <span class="mini-icon">&#9917;</span>
+              <p>Skill Development</p>
+            </div>
+            <div class="about-mini-card accent">
+              <span class="mini-icon">&#127942;</span>
+              <p>Competitive Play</p>
+            </div>
+            <div class="about-mini-card accent">
+              <span class="mini-icon">&#127891;</span>
+              <p>School Tie-ups</p>
+            </div>
+            <div class="about-mini-card">
+              <span class="mini-icon">&#128170;</span>
+              <p>Fitness & Discipline</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section class="services" id="services">
+  <!-- ===== PROGRAMMES ===== -->
+  <section class="programmes section" id="programmes">
     <div class="container">
-      <h2>What We Offer</h2>
-      <div class="divider"></div>
-      <div class="cards">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">What We Offer</p>
+        <h2>Our <span>Programmes</span></h2>
+        <p class="section-sub">Choose the path that's right for your child — from first kicks to full tournaments.</p>
+      </div>
+      <div class="prog-cards">
 
-        <div class="card">
-          <div class="card-icon">&#9917;</div>
+        <div class="prog-card reveal">
+          <div class="prog-card-top">
+            <span class="prog-icon">&#9917;</span>
+            <span class="prog-tag">All Ages</span>
+          </div>
           <h3>Football Coaching</h3>
           <p>
-            Professional coaching sessions tailored for all age groups and skill levels.
-            Our certified coaches focus on technique, fitness, and game intelligence.
+            Structured coaching sessions led by certified coaches. We cover ball mastery,
+            passing, positioning, and match play — tailored for beginners through to
+            advanced players.
           </p>
+          <ul class="prog-features">
+            <li>Age-group specific sessions</li>
+            <li>Certified UEFA/AFC coaches</li>
+            <li>Weekly progress tracking</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Enrol Now</a>
         </div>
 
-        <div class="card">
-          <div class="card-icon">&#127942;</div>
-          <h3>Organising Tournaments</h3>
+        <div class="prog-card featured reveal">
+          <div class="prog-card-top">
+            <span class="prog-icon">&#127942;</span>
+            <span class="prog-tag featured-tag">Most Popular</span>
+          </div>
+          <h3>Tournament Organisation</h3>
           <p>
-            We organise competitive and friendly tournaments that give players real match experience,
-            build team spirit, and bring communities together through football.
+            We organise competitive and community tournaments that give players real
+            match experience, build team spirit, and unite neighbourhoods through the
+            power of football.
           </p>
+          <ul class="prog-features">
+            <li>Local &amp; inter-city tournaments</li>
+            <li>All age groups &amp; skill levels</li>
+            <li>Prizes, medals &amp; recognition</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Enrol Now</a>
         </div>
 
-        <div class="card">
-          <div class="card-icon">&#127891;</div>
-          <h3>After School Coaching Partnerships</h3>
+        <div class="prog-card reveal">
+          <div class="prog-card-top">
+            <span class="prog-icon">&#127891;</span>
+            <span class="prog-tag">Schools</span>
+          </div>
+          <h3>After School Partnerships</h3>
           <p>
-            We partner with schools to deliver structured after-school football programs,
-            helping students stay active, build confidence, and develop a lifelong love of the sport.
+            We partner with schools to deliver structured after-school football programmes.
+            Students develop confidence, teamwork, and a lifelong love of sport — right on
+            their doorstep.
           </p>
+          <ul class="prog-features">
+            <li>Custom school programmes</li>
+            <li>Curriculum-aligned fitness</li>
+            <li>Parent progress reports</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Partner With Us</a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
+  <!-- ===== DEVELOPMENT PATHWAY ===== -->
+  <section class="pathway section" id="pathway">
     <div class="container">
-      <h2>Get In Touch</h2>
-      <div class="divider"></div>
-      <div class="contact-wrapper">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Your Journey</p>
+        <h2>The TFP <span>Development Pathway</span></h2>
+        <p class="section-sub">A clear, structured journey from first touch to competitive football.</p>
+      </div>
+      <div class="pyramid reveal">
+        <div class="pyramid-tier tier-1">
+          <span class="tier-label">Grassroots</span>
+          <span class="tier-desc">First touch, fun &amp; fundamentals · Ages 5–9</span>
+        </div>
+        <div class="pyramid-tier tier-2">
+          <span class="tier-label">Development</span>
+          <span class="tier-desc">Technique, tactics &amp; teamwork · Ages 10–13</span>
+        </div>
+        <div class="pyramid-tier tier-3">
+          <span class="tier-label">Advanced</span>
+          <span class="tier-desc">Competitive play &amp; tournaments · Ages 14–17</span>
+        </div>
+        <div class="pyramid-tier tier-4">
+          <span class="tier-label">Elite</span>
+          <span class="tier-desc">Scouting, trials &amp; pathways · 17+</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="contact-info">
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Get Involved</p>
+        <h2>Join <span>TFP Academy</span></h2>
+        <p class="section-sub">Reach out to enrol your child, partner with us, or learn more about our programmes.</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <h3>Contact Us</h3>
           <div class="contact-item">
-            <span class="icon">&#9993;</span>
-            <a href="mailto:tfpawebsite@gmail.com">tfpawebsite@gmail.com</a>
+            <div class="contact-icon">&#9993;</div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:tfpawebsite@gmail.com">tfpawebsite@gmail.com</a>
+            </div>
           </div>
           <div class="contact-item">
-            <span class="icon">&#128222;</span>
-            <a href="tel:+918884413777">+91 8884413777</a>
+            <div class="contact-icon">&#128222;</div>
+            <div>
+              <p class="contact-label">Phone</p>
+              <a href="tel:+918884413777">+91 88844 13777</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">&#127968;</div>
+            <div>
+              <p class="contact-label">Programmes</p>
+              <p>Football Coaching · Tournaments · School Partnerships</p>
+            </div>
           </div>
         </div>
-
-        <form class="contact-form" onsubmit="handleSubmit(event)">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn">Send Message</button>
+        <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" />
+            </div>
+            <div class="form-group">
+              <label for="interest">Interested In</label>
+              <select id="interest" name="interest">
+                <option value="">Select a programme</option>
+                <option>Football Coaching</option>
+                <option>Tournament Registration</option>
+                <option>School Partnership</option>
+                <option>General Enquiry</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your child or your school..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
           <p class="form-status" id="form-status"></p>
         </form>
-
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>&copy; 2026 TFP Academy. All rights reserved.</p>
-    <p>Bringing football to every neighbourhood!</p>
+    <div class="footer-main">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">TFP<span>Academy</span></div>
+          <p>Bringing football to every neighbourhood. We develop skills, build character, and create champions.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram" class="social-icon">&#x1F4F7;</a>
+            <a href="#" aria-label="Facebook" class="social-icon">&#x1F464;</a>
+            <a href="#" aria-label="YouTube" class="social-icon">&#x25B6;</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Programmes</h4>
+          <ul>
+            <li><a href="#programmes">Football Coaching</a></li>
+            <li><a href="#programmes">Tournaments</a></li>
+            <li><a href="#programmes">School Partnerships</a></li>
+            <li><a href="#pathway">Development Pathway</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#programmes">Our Programmes</a></li>
+            <li><a href="#contact">Enrol Now</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><a href="mailto:tfpawebsite@gmail.com">tfpawebsite@gmail.com</a></li>
+            <li><a href="tel:+918884413777">+91 88844 13777</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 TFP Academy. All rights reserved.</p>
+        <p>Bringing football to every neighbourhood.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
